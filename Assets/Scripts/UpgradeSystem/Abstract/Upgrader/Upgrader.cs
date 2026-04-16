@@ -14,8 +14,8 @@ public class Upgrader<T, S, M> : MonoBehaviour, IUpgrader<M>, IUpgradeable
 
     [SerializeField] private Money _money;
 
-    [SerializeField] private List<UpgradePartSpawner> _compositePartSpawners;  // Observable part spawner
-                                                                               // [SerializeField] private List<ObservableUpgradePart> _observableParts;
+    [SerializeField] private List<UpgradePartSpawner> _compositePartSpawners;
+
 
     [SerializeField] private List<UpgradePart> _installedUpgradeParts;
 
@@ -88,12 +88,11 @@ public class Upgrader<T, S, M> : MonoBehaviour, IUpgrader<M>, IUpgradeable
             ProcessUpgrade(upgrade);
         }
 
-        _currentUpgrade = FindUpgrade(_carLevel.Value, UpgradeLevel);// tmp
+        _currentUpgrade = FindUpgrade(_carLevel.Value, UpgradeLevel);
 
         if (_currentUpgrade != null)
         {
             RaiseUpgradeEvent((M)_currentUpgrade);
-            // UpgradeExecuted?.Invoke((M)_currentUpgrade);
         }
         else
         {

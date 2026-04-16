@@ -33,9 +33,7 @@ public class RuntimeCarFactory
 
         CurrentCar = car;
 
-        _signalBus.Fire(new CarSpawnedSignal(car));
-
-        Debug.Log($"Created car: {car.name}");
+        _signalBus.Fire(new CarSpawnedSignal(car));       
 
         return car;
     }

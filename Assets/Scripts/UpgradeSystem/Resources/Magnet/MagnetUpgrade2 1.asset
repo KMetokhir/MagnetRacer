@@ -16,6 +16,6 @@ MonoBehaviour:
   _carLevel: 1
   _upgradeLevel: 2
   _upgradeParts:
-  - {fileID: 9144848437073152212, guid: e276b2cf35d10cf43bdeaac6b85d43af, type: 3}
-  - {fileID: 4218785124024451468, guid: 28dc1f591b0a1284ca92d92a4bac2045, type: 3}
-  _magnetRadius: 80
+  - {fileID: 9144848437073152212, guid: 44926496cc31b024fa67eec50d9cb9a8, type: 3}
+  - {fileID: 4218785124024451468, guid: 2f1e366e573b38444b725b39bcd8675d, type: 3}
+  _magnetRadius: 40

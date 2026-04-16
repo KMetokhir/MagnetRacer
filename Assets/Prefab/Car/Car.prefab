@@ -823,9 +823,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxAngleXRotation: 10
-  _correctionForceXRotation: 2000
+  _correctionForceXRotation: 5000
   _maxAngleZRotation: 10
-  _correctionForceZRotation: 1000
+  _correctionForceZRotation: 4000
   _groundCheck: {fileID: 5903418925327293212}
 --- !u!114 &1819564603378850088
 MonoBehaviour:

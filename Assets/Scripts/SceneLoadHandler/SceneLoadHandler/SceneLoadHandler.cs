@@ -25,15 +25,11 @@ public class SceneLoadHandler : MonoBehaviour
 
     private void OnSceneUnloaded(Scene arg0)
     {
-        Debug.Log("Scene Unloaded");
-
         SceneUnloaded?.Invoke();
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        Debug.Log($"Scene loaded: {scene.name}");
-
         _sceneName = scene.name;
         SceneLoaded?.Invoke();
     }

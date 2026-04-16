@@ -3,6 +3,7 @@
     public uint UpgradeLevel { get; private set; }
     public uint Acceleration { get; private set; }
     public uint MaxSpeed { get; private set; }
+    public uint StopSpeed { get; private set; }
     public float RotationSpeed { get; private set; }
     public float MaxAngle { get; private set; }
     public float AckermannMultiplier { get; private set; }
@@ -15,5 +16,6 @@
         RotationSpeed = data.RotationSpeed;
         MaxAngle = data.MaxAngle;
         AckermannMultiplier = data.AckermannMultiplier;
+        StopSpeed = data.StopSpeed;
     }
 }

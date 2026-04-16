@@ -26,17 +26,13 @@ public abstract class PoollableRemover<T> : MonoBehaviour
 
     private void OnObjectGetted(T obj)
     {
-        _activeObjects.Add(obj);
-
-        Debug.Log($"[Remover] Got object {obj.name}");
+        _activeObjects.Add(obj);       
 
         Subscribe(obj);
     }
 
     private void OnSceneUnloaded()
     {
-        Debug.Log($"Scene unloaded. Active: {_activeObjects.Count}");
-
         foreach (var obj in _activeObjects)
         {
             Unsubscribe(obj);

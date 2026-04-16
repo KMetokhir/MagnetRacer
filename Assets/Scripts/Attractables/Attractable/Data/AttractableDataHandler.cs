@@ -41,9 +41,7 @@ public class AttractableDataHandler<T> : MonoBehaviour
 
             _alldata.Add(data);
 
-            UpdateObjectList();
-
-            Debug.Log($"Registered object: {data.Id} at {attractable.Transform.position}");
+            UpdateObjectList();            
         }
     }
 
@@ -78,12 +76,9 @@ public class AttractableDataHandler<T> : MonoBehaviour
         List<AttractableData> foundData = _alldata.Where(val => val.SceneName == sceneName && val.Rows == rows && val.Columns == columns).ToList();
 
         foreach (AttractableData data in foundData)
-        {
-            Debug.Log(data.Rows + " columns " + data.Columns);
+        {          
             positions.Add(data.Position);
-        }
-
-        Debug.Log($"Found {positions.Count} objects of type '' in scene '{sceneName}'");
+        }       
 
         return positions;
     }
@@ -110,9 +105,7 @@ public class AttractableDataHandler<T> : MonoBehaviour
                         _alldata.Add(data);
                     }
                 }
-            }
-
-            Debug.Log($"Loaded {_alldata.Count} objects from PlayerPrefs");
+            }           
         }
     }
 
@@ -128,8 +121,7 @@ public class AttractableDataHandler<T> : MonoBehaviour
         _alldata.Remove(data);
         PlayerPrefs.DeleteKey($"{ObjectKeyPrefix}{data.Id}");
         PlayerPrefs.Save();
-        UpdateObjectList();
-        Debug.Log($"Removed object: {data.Id}");
+        UpdateObjectList();       
     }
 
     private string GenerateDataId(string id, string sceneName)

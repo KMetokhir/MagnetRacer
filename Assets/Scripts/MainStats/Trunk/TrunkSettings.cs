@@ -6,7 +6,6 @@ public class TrunkSettings : Settings<PowerUpgrader, IPowerUpgradeData>, ITrunkD
 
     protected override void ApplyUpgrade(IPowerUpgradeData data)
     {
-        MaxWeight = data.MaxWeight;
-        Debug.Log($"TrunkSettings: MaxWeight updated to {MaxWeight}");
+        MaxWeight = data.MaxWeight;       
     }
 }

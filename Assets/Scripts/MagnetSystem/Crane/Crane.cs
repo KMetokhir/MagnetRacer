@@ -72,8 +72,6 @@ public class Crane : CompositePart
 
     private void OnMagnetSpawned(Magnet magnet)
     {
-        Debug.Log("MagnetSpawned");
-
         _rope.ConnectTarget(magnet, false);      
 
        MagnetSpawned?.Invoke(magnet);

@@ -8,6 +8,8 @@ public class DriveDataProvader : CarComponentProvider<IDriveData>, IDriveData
 
     public uint MaxSpeed => Component.MaxSpeed;
 
+    public uint StopSpeed => Component.StopSpeed;
+
     public float RotationSpeed => Component.RotationSpeed;
 
     public float MaxAngle => Component.MaxAngle;

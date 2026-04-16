@@ -79,9 +79,7 @@ public class CarDataSaver : ICarPositionSaver, ICarConfigSaver
         PlayerPrefs.SetFloat(xKey, position.x);
         PlayerPrefs.SetFloat(yKey, position.y);
         PlayerPrefs.SetFloat(zKey, position.z);
-        PlayerPrefs.Save();
-
-        Debug.Log($"Vector3 saved: {position}");
+        PlayerPrefs.Save();           
     }
 
     private Vector3 GetVector3(string key, Vector3 defaultValue = default)

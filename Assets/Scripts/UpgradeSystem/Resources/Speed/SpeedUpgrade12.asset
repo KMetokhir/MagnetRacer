@@ -17,9 +17,11 @@ MonoBehaviour:
   _upgradeLevel: 2
   _upgradeParts:
   - {fileID: 1984481689384742878, guid: 2533a650d9bbacd4baf8e4c36e08599f, type: 3}
-  - {fileID: 9205643665690870874, guid: 387f0ce7a38e30b4588e46e54b7f7703, type: 3}
+  - {fileID: 6491201730912525650, guid: 7374e53a959226e43ac05d87bbc90286, type: 3}
+  - {fileID: 3686780840422543725, guid: bdc6318b7f978994784544c81b941d9b, type: 3}
   _acceleration: 1500
   _maxSpeed: 100
+  _stopSpeed: 100
   _rotationSpeed: 1
   _maxAngle: 30
-  _ackermannMultiplier: 1.5
+  _ackermannMultiplier: 1.8
