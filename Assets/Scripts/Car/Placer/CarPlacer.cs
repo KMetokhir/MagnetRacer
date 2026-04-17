@@ -43,7 +43,7 @@ public class CarPlacer : MonoBehaviour
 
     private void OnCarStuck(CarStuckEvent @event)
     {
-        SetPosition();
+        SetPosition();        
     }
 
     private void OnEnable()

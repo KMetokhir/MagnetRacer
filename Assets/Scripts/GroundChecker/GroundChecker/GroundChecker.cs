@@ -26,8 +26,7 @@ public class GroundChecker : MonoBehaviour
 
     private void Update()
     {
-        GroundeCheck();
-        PlayerPrefs.DeleteAll();
+        GroundeCheck();       
     }
 
     public void GroundeCheck()
